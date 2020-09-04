@@ -20,7 +20,7 @@ const registerApi = (app) => {
   app.get("/register", async (req, res) => {
     try {
       const registrationList = await Register.find();
-      res.status(201).json(registrationList);
+      res.status(201).json(registrationList );
     } catch (error) {
       res.status(404).json(error);
     }
